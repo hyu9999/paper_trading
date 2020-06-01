@@ -16,7 +16,7 @@ class PYTDXService:
         """Constructor"""
         self.connected = False  # 数据服务连接状态
         self.hq_api = None  # 行情API
-        self.client = client  # 行情API
+        self.client = client  # mongo client
 
     def connect_api(self):
         """连接API"""
