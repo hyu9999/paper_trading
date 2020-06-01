@@ -218,7 +218,7 @@ class MainEngine():
 
     def creat_hq_api(self):
         """实例化行情源"""
-        tdx = PYTDXService()
+        tdx = PYTDXService(self.creat_db().db_client)
         tdx.connect_api()
 
         return tdx
